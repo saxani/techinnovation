@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-image: url(Slides_background.jpg);
+}
+
+#container{
+    margin: 2%;
+    text-align: center;
+}
+
+table, th, td {
+
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: #999999;
+}
