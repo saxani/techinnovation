@@ -3,15 +3,22 @@
 
 	<head>
 		<script type="text/javascript">
+            
+            var x, y, z;
+            
 			function ondevicemotion(e) {
-				var x = e.acceleration.x;
-				var y = e.acceleration.y;
-				var z = e.acceleration.z;
+				x = e.acceleration.x;
+				y = e.acceleration.y;
+				z = e.acceleration.z;
 
-            	var elem = document.getElementById('map');
-            	map.innerHTML = x + " " + y + " " + z;
+            	
 
 			}
+            
+            setInterval(function(){
+                var elem = document.getElementById('map');
+            	map.innerHTML = x + " " + y + " " + z;
+            }, 300);
 
 			window.addEventListener('devicemotion', ondevicemotion, false);
 		</script>
