@@ -9,16 +9,14 @@
 			function ondevicemotion(e) {
 				x = e.acceleration.x;
 				y = e.acceleration.y;
-				z = e.acceleration.z;
-
-            	
+				z = e.acceleration.z;	
 
 			}
             
             setInterval(function(){
                 var elem = document.getElementById('map');
             	map.innerHTML = x + " " + y + " " + z;
-            }, 300);
+            }, 500);
 
 			window.addEventListener('devicemotion', ondevicemotion, false);
 		</script>
